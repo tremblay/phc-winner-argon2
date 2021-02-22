@@ -9,13 +9,20 @@ let package = Package(
         // Products define the executables and libraries a package produces, and make them visible to other packages.
         .library(
             name: "Argon2",
-            targets: ["Argon2"]),
+            targets: ["Argon2"]
+        ),
     ],
     targets: [
         // Targets are the basic building blocks of a package. A target can define a module or a test suite.
         // Targets can depend on other targets in this package, and on products in packages this package depends on.
         .target(
             name: "Argon2",
-            path: "src")
+            path: "./",
+            exclude: [
+                "kats/test.sh",
+                "README.md",
+                "LICENSE"
+            ]
+        )
     ]
 )
