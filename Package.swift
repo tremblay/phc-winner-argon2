@@ -70,7 +70,7 @@ let package = Package(
                 "vs2015/Argon2RefTestCI/Argon2RefTestCI.vcxproj.filters",
                 "kats/argon2id_v16.shasum"
             ],
-            publicHeadersPath: "include/"
+            publicHeadersPath: "include"
         )
     ]
 )
