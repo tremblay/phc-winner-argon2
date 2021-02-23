@@ -44,14 +44,26 @@ let package = Package(
             name: "argon2",
             path: "src",
             exclude: [
-                "blake2/blamka-round-opt.h",
                 "bench.c",
                 "genkat.c",
-                "genkat.h",
                 "opt.c",
                 "ref.c",
                 "run.c",
                 "test.c",
+            ],
+            sources: [
+                "blake2/blake2b.c",
+                "blake2/blake2.h",
+                "blake2/blake2-impl.h",
+                "blake2/blamka-round-ref.h",
+                "argon2.c",
+                "core.c",
+                "core.h",
+                "encoding.c",
+                "encoding.h",
+                "ref.c",
+                "thread.c",
+                "thread.h",
             ],
             cSettings: [
                 .headerSearchPath("../include")
