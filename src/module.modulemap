@@ -1,5 +1,6 @@
 module CArgon2 {
-     header "../include/argon2.h"
+     header "shim.h"
+     link "argon2"
 
      export *
  }
