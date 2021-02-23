@@ -3,16 +3,16 @@
 import PackageDescription
 
 let package = Package(
-    name: "argon2",
+    name: "CArgon2",
     products: [
         .library(
-            name: "argon2",
-            targets: ["argon2"]
+            name: "CArgon2",
+            targets: ["CArgon2"]
         ),
     ],
     targets: [
         .target(
-            name: "argon2",
+            name: "CArgon2",
             path: "src",
             publicHeadersPath: "include",
             cSettings: [
