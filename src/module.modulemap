@@ -1,0 +1,4 @@
+module argon2 {
+    umbrella header "../include/argon2.h"
+    link "argon2"
+}
