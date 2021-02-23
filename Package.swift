@@ -14,6 +14,15 @@ let package = Package(
         .target(
             name: "CArgon2",
             path: "src",
+            exclude: [
+                "blake2/blamka-round-opt.h",
+                "bench.c",
+                "genkat.c",
+                "genkat.h",
+                "opt.c",
+                "run.c",
+                "test.c"
+            ],
             publicHeadersPath: "include",
             cSettings: [
                 .headerSearchPath("../include")
